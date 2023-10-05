@@ -14,11 +14,7 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            // Launch a projectile from the player
-            Instantiate(projectilePrefab,transform.position, projectilePrefab.transform.rotation);
-        }
+       
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
